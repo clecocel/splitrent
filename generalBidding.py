@@ -10,7 +10,7 @@ if __name__ == '__main__':
 	while True:
 		priceStr = 'Prices '
 		for room in xrange(rooms):
-			priceStr += 'Room' + str(room+1) + ' ' + str(round(priceRooms[room])) + ', '
+			priceStr += 'Room ' + str(room+1) + ' ' + str(round(priceRooms[room])) + ', '
 		
 		print priceStr
 		
@@ -31,5 +31,3 @@ if __name__ == '__main__':
 		
 		for roomId in [i for i in xrange(rooms) if i+1 != (bid)]:
 			priceRooms[roomId] -= 10 / (rooms - 1.0)
-		
-		print sum(priceRooms)
